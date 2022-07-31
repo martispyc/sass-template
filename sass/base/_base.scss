@@ -4,12 +4,45 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
- }
+    
+    list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+
+    // OPTIONAL
+	text-rendering: optimizeLegibility;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+}
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth; 
 }
 
 body {
     box-sizing: border-box; /*it's inherited lmao*/
+	position: relative; // damn- optional frfr
+}
+
+// OPTIONAL
+
+a,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	text-decoration: none;
+}
+
+img,
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
